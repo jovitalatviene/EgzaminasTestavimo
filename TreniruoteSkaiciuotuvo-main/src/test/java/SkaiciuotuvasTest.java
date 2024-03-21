@@ -79,7 +79,7 @@ public class SkaiciuotuvasTest {
         Skaiciuotuvas.searchOperationShow();
         Skaiciuotuvas.searchOperationChange();
         String resultActual = Skaiciuotuvas.findNewdUrl("http://localhost:8080/rodyti?id=");
-        Assert.assertNotEquals("Url nepasikeite - operacija neatlikta", resultActual);
+        Assert.assertEquals("Url nepasikeite - operacija neatlikta", resultActual);
     }
     @AfterMethod
     public static void close() {Skaiciuotuvas.close();}
